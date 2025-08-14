@@ -1,1 +1,99 @@
-# Dbdbd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 150px auto 150px;
+            grid-gap: 10px;
+            align-items: start;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 120px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"] {
+            width: 250px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+        .gender, .hobbies {
+            margin-top: 10px;
+        }
+        .gender label, .hobbies label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left column: Image -->
+        <div>
+            <img src="https://via.placeholder.com/150" alt="Workout Image">
+        </div>
+
+        <!-- Middle column: Text -->
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie tincidunt bibendum. 
+                Praesent placerat tellus nisi, eu ornare eros ultrices et. Nam suscipit non ipsum at semper. Vivamus.
+            </p>
+        </div>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name">
+        </div>
+
+        <div class="form-group">
+            <label>Address:</label>
+            <input type="text" name="address">
+        </div>
+
+        <div class="form-group">
+            <label>Email-Ad:</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label>Contact Number:</label>
+            <input type="text" name="contact">
+        </div>
+
+        <div class="gender">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <div class="hobbies">
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="Swimming"> Swimming<br>
+            <input type="checkbox" name="hobby" value="Biking"> Biking<br>
+            <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+            <input type="checkbox" name="hobby" value="Watching TV"> Watching TV<br>
+            <input type="checkbox" name="hobby" value="Playing"> Playing
+        </div>
+    </form>
+
+</body>
+</html>
