@@ -4,28 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 150px auto 150px;
-            grid-gap: 10px;
-            align-items: start;
-        }
-        .form-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .form-group label {
-            width: 120px;
-            font-weight: bold;
-        }
-        input[type="text"], input[type="email"] {
-            width: 250px;
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <img src="https://via.placeholder.com/150" alt="Workout Image" width="150">
+            </td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas molestie tincidunt bibendum. 
+                Praesent placerat tellus nisi, eu ornare eros ultrices et. 
+                Nam suscipit non ipsum at semper. Vivamus.
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <p>
+            Name: <input type="text" name="name">
+        </p>
+        <p>
+            Address: <input type="text" name="address">
+        </p>
+        <p>
+            Email-Ad: <input type="email" name="email">
+        </p>
+        <p>
+            Contact Number: <input type="text" name="contact">
+        </p>
+
+        <p>
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </p>
+
+        <p>
+            Hobbies: <br>
+            <input type="checkbox" name="hobby" value="Swimming"> Swimming<br>
+            <input type="checkbox" name="hobby" value="Biking"> Biking<br>
+            <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+            <input type="checkbox" name="hobby" value="Watching TV"> Watching TV<br>
+            <input type="checkbox" name="hobby" value="Playing"> Playing
+        </p>
+    </form>
+
+</body>
+</html>            width: 250px;
             padding: 5px;
             border: 1px solid black;
         }
